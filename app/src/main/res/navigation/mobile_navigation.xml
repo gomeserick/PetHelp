@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pethelp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_chat"
+            app:destination="@id/nav_chat" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_perfil"
+            app:destination="@id/nav_perfil" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_lista"
+            app:destination="@id/nav_lista" />
+        <action
+            android:id="@+id/action_nav_home_to_funcionarioFragment"
+            app:destination="@id/funcionarioFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lista"
+        android:name="com.example.pethelp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_lista_animais" />
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.pethelp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.pethelp.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil"
+        />
+    <fragment
+        android:id="@+id/funcionarioFragment"
+        android:name="com.example.pethelp.FuncionarioFragment"
+        android:label="fragment_funcionario"
+        tools:layout="@layout/fragment_funcionario" >
+        <action
+            android:id="@+id/action_funcionarioFragment_to_disponibilizaAnimalFragment"
+            app:destination="@id/disponibilizaAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/disponibilizaAnimalFragment"
+        android:name="com.example.pethelp.DisponibilizaAnimalFragment"
+        android:label="fragment_disponibiliza_animal"
+        tools:layout="@layout/fragment_disponibiliza_animal" />
+    <activity
+        android:id="@+id/animalActivity"
+        android:name="com.example.pethelp.AnimalActivity"
+        android:label="activity_animal"
+        tools:layout="@layout/activity_animal" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.pethelp.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/animalFragment"
+        android:name="com.example.pethelp.AnimalFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" />
+</navigation>

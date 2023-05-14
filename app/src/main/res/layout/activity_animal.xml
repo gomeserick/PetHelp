@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimalActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/FotoAnimal"
+                android:layout_width="248dp"
+                android:layout_height="222dp"
+                app:layout_constraintBottom_toTopOf="@+id/Raca"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:id="@+id/Raca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="Name"
+                app:layout_constraintBottom_toTopOf="@+id/Cor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FotoAnimal" />
+
+            <EditText
+                android:id="@+id/Cor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="Name"
+                app:layout_constraintBottom_toTopOf="@+id/Genero"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Raca" />
+
+            <EditText
+                android:id="@+id/Genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="Name"
+                app:layout_constraintBottom_toTopOf="@+id/Temperamento"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Cor" />
+
+            <EditText
+                android:id="@+id/Temperamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="Name"
+                app:layout_constraintBottom_toTopOf="@+id/Castrado"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Genero" />
+
+            <EditText
+                android:id="@+id/Castrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="Name"
+                app:layout_constraintBottom_toTopOf="@+id/AlterarAnimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Temperamento" />
+
+            <Button
+                android:id="@+id/AlterarAnimal"
+                android:layout_width="338dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="Alterar Dados"
+                app:layout_constraintBottom_toTopOf="@+id/RegistroAnimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Castrado" />
+
+            <Button
+                android:id="@+id/RegistroAnimal"
+                android:layout_width="156dp"
+                android:layout_height="97dp"
+                android:layout_marginStart="8dp"
+                android:text="Registro de Adoção"
+                app:layout_constraintBottom_toTopOf="@+id/AdicionarLista"
+                app:layout_constraintEnd_toStartOf="@+id/VisitaAnimal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AlterarAnimal"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/VisitaAnimal"
+                android:layout_width="156dp"
+                android:layout_height="97dp"
+                android:layout_marginEnd="8dp"
+                android:text="Solicitar Visita"
+                app:layout_constraintBottom_toTopOf="@+id/AdicionarLista"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/RegistroAnimal"
+                app:layout_constraintTop_toBottomOf="@+id/AlterarAnimal"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/AdicionarLista"
+                android:layout_width="338dp"
+                android:layout_height="78dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Adicionar à lista de Interesse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AlterarAnimal"
+                app:layout_constraintVertical_bias="0.591" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

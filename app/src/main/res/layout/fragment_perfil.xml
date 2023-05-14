@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.perfil.PerfilFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Documentos"
+            app:layout_constraintBottom_toTopOf="@+id/Excluir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Telefone" />
+
+        <Button
+            android:id="@+id/Alterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Alterar Dados"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Excluir" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/Endereco"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:editable="true"
+            app:layout_constraintBottom_toTopOf="@+id/Telefone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CPF" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/CPF"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:editable="true"
+            app:layout_constraintBottom_toTopOf="@+id/Endereco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RG" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/Nome"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:editable="true"
+            app:layout_constraintBottom_toTopOf="@+id/Email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/Email"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:editable="true"
+            app:layout_constraintBottom_toTopOf="@+id/RG"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nome" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/RG"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:editable="true"
+            app:layout_constraintBottom_toTopOf="@+id/CPF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/Telefone"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:editable="true"
+            app:layout_constraintBottom_toTopOf="@+id/Enviar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Endereco" />
+
+        <Button
+            android:id="@+id/Excluir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excluir conta"
+            app:layout_constraintBottom_toTopOf="@+id/Alterar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Enviar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

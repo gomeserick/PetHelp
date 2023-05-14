@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisponibilizaAnimalFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/asd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/Disp_Raca"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="Raça"
+            app:layout_constraintBottom_toTopOf="@+id/Disp_Cor"
+            app:layout_constraintEnd_toStartOf="@+id/Disp_Insert_Raca"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Foto_Animal" />
+
+        <EditText
+            android:id="@+id/Disp_Insert_Castrado"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/BTN_Disp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Disp_Castrado"
+            app:layout_constraintTop_toBottomOf="@+id/Disp_Insert_Temperamento" />
+
+        <EditText
+            android:id="@+id/Disp_Insert_Temperamento"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/Disp_Insert_Castrado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Dips_Temperamento"
+            app:layout_constraintTop_toBottomOf="@+id/Disp_Insert_Genero" />
+
+        <EditText
+            android:id="@+id/Disp_Insert_Genero"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/Disp_Insert_Temperamento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Disp_Genero"
+            app:layout_constraintTop_toBottomOf="@+id/Disp_Insert_Cor" />
+
+        <EditText
+            android:id="@+id/Disp_Insert_Cor"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/Disp_Insert_Genero"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Disp_Cor"
+            app:layout_constraintTop_toBottomOf="@+id/Disp_Insert_Raca" />
+
+        <EditText
+            android:id="@+id/Disp_Insert_Raca"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/Disp_Insert_Cor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Disp_Raca"
+            app:layout_constraintTop_toBottomOf="@+id/Foto_Animal" />
+
+        <EditText
+            android:id="@+id/Disp_Castrado"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="Castrado"
+            app:layout_constraintBottom_toTopOf="@+id/BTN_Disp"
+            app:layout_constraintEnd_toStartOf="@+id/Disp_Insert_Castrado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Dips_Temperamento" />
+
+        <EditText
+            android:id="@+id/Dips_Temperamento"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="Temperamento"
+            app:layout_constraintBottom_toTopOf="@+id/Disp_Castrado"
+            app:layout_constraintEnd_toStartOf="@+id/Disp_Insert_Temperamento"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Disp_Genero" />
+
+        <EditText
+            android:id="@+id/Disp_Genero"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="Gênero"
+            app:layout_constraintBottom_toTopOf="@+id/Dips_Temperamento"
+            app:layout_constraintEnd_toStartOf="@+id/Disp_Insert_Genero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Disp_Cor" />
+
+        <EditText
+            android:id="@+id/Disp_Cor"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="Cor"
+            app:layout_constraintBottom_toTopOf="@+id/Disp_Genero"
+            app:layout_constraintEnd_toStartOf="@+id/Disp_Insert_Cor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Disp_Raca" />
+
+        <EditText
+            android:id="@+id/Codigo"
+            android:layout_width="97dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="288dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="6dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/Foto_Animal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/Foto_Animal"
+            android:layout_width="337dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="82dp"
+            app:layout_constraintBottom_toTopOf="@+id/BTN_Disp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/BTN_Disp"
+            android:layout_width="329dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="100dp"
+            android:text="@string/BTN_dispAnimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

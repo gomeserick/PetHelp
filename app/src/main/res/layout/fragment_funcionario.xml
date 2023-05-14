@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FuncionarioFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/NomeFuncionario"
+            android:layout_width="361dp"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:hint="@string/prompt_nome"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/RGFuncionario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/RGFuncionario"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/prompt_RG"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/CPFFuncionario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/FotoFuncionario"
+            app:layout_constraintTop_toBottomOf="@+id/NomeFuncionario" />
+
+        <EditText
+            android:id="@+id/CPFFuncionario"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/prompt_CPF"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/TelefoneFuncionario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/FotoFuncionario"
+            app:layout_constraintTop_toBottomOf="@+id/RGFuncionario" />
+
+        <EditText
+            android:id="@+id/TelefoneFuncionario"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/prompt_telefone"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/EmailFuncionario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/FotoFuncionario"
+            app:layout_constraintTop_toBottomOf="@+id/CPFFuncionario" />
+
+        <EditText
+            android:id="@+id/EmailFuncionario"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/prompt_email"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/EnderecoFuncionario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FotoFuncionario" />
+
+        <EditText
+            android:id="@+id/EnderecoFuncionario"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/prompt_endereco"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/BtnDispAnimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EmailFuncionario" />
+
+        <ImageView
+            android:id="@+id/FotoFuncionario"
+            android:layout_width="210dp"
+            android:layout_height="208dp"
+            app:layout_constraintBottom_toTopOf="@+id/EmailFuncionario"
+            app:layout_constraintEnd_toStartOf="@+id/CPFFuncionario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NomeFuncionario"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/BtnDispAnimal"
+            android:layout_width="320dp"
+            android:layout_height="51dp"
+            android:text="@string/BTN_dispAnimal"
+            app:layout_constraintBottom_toTopOf="@+id/AlterarDadosFun"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EnderecoFuncionario" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/BTN_Exlcuir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AlterarDadosFun" />
+
+        <Button
+            android:id="@+id/AlterarDadosFun"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:text="@string/BTN_AlterarDados"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnDispAnimal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
